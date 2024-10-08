@@ -1,8 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-BR"><head>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Página simples com tabela e formulário.">
+    <meta name="keywords" content="Portifólio, HTML, Tabela, Formulário, Simples">
+    <meta name="author" content="Ygor Antunes">
     <title>Portfólio Pessoal de Ygor Antunes </title>
     <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
         img {
             max-width: 50%;
         }
@@ -14,44 +38,96 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
     </style>
-</head><body><header>
-    </header>
+</head>
+    <body>
+        <h1>Portfólio Pessoal de Ygor Antunes</h1>
 
-    <h1>Portfólio Pessoal de Ygor Antunes</h1>
+        <section>
+            <h2>Introdução</h2>
+            <p> - Bem-vindo ao meu portfólio pessoal, aqui se encontra um pouco sobre a minha pessoa.</p>
+            <h3>O que você encontrará aqui:</h3>
+            <ol>
+                <li><a href="#Sobre mim">Sobre mim</a></li>
+                <li><a href="#Habilidades">Habilidades</a></li>
+                <li><a href="#Contato">Contato</a></li>
+            </ol>
+        </section>
+        <section id="Sobre mim">
+            <h2>Sobre mim</h2>
+            <h3> - Um atual estudante no começo do campus de Ciência da Computação do Instituto Federal Catarinense.</h3>
+            <a href="https://ifc.edu.br">
+                <img src="IFC.webp" alt="Imagem do Campus do IFC.">
+            </a>
+        </section>
+        <section id="Habilidades">
+            <h2>Habilidades Profissionais</h2>
+            <ul>
+                <li>Conhecimento Básico em python.</li>
+                <li>Conhecimento Básico em Java.</li>
+                <li>Iniciação em Ciência da Computação.</li>
+            </ul>
+            <br>
+            <table>
+                <caption>Matérias Cursadas</caption>
+                <tr>
+                    <th>Matéria</th>
+                    <th>Carga Horária</th>
+                    <th>Professor</th>
+                </tr>
+                <tr>
+                    <td>Algoritmos</td>
+                    <td>90 Horas</td>
+                    <td> ####### </td>
+                </tr>
+                <tr>
+                    <td>Fundamentos da Computação</td>
+                    <td>60 Horas</td>
+                    <td> ####### </td>
+                </tr>
+                <tr>
+                    <td>Introdução a Lógica</td>
+                    <td>60 Horas</td>
+                    <td> ####### </td>
+                </tr>
+            </table>
+            <br>
+            <img src="habilidades.jpg" alt="Programação.">
+        </section>
+        <section id="Contato">
+            <h2>Contato</h2>
+            <p>Se você deseja saber mais sobre meu trabalho ou tem alguma dúvida, entre em contato:</p>
+            <ul>
+                <li><strong>E-mail</strong>: <a href="mailto:ygorantunes99@gmail.com">ygorantunes99@gmail.com</a></li>
+                <li><strong>Instagram</strong>: <a href="https://instagram.com/meuperfil">@meuperfil</a></li>
+                <li><strong>LinkedIn</strong>: <a href="https://linkedin.com/in/meuperfil">Ainda sem um.</a></li>
+            </ul>
+        </section>
+        <section>
+            <form action="/enviar" method="post">
+                <h2>Avaliação de Opinião</h2>
+                <fieldset>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui">
+    
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail aqui">
 
-    <section>
-        <h2>Introdução</h2>
-        <p> - Bem-vindo ao meu portfólio pessoal, aqui se encontra um pouco sobre a minha pessoa.</p>
-        <h3>O que você encontrará aqui:</h3>
-        <ol>
-            <li><a href="#Sobre mim">Sobre mim</a></li>
-            <li><a href="#Habilidades">Habilidades</a></li>
-            <li><a href="#Contato">Contato</a></li>
-        </ol>
-    </section>
-    <section id="Sobre mim">
-        <h2>Sobre mim</h2>
-        <h3> - Um atual estudante no começo do campus de Ciência da Computação do Instituto Federal Catarinense.</h3>
-        <a href="https://ifc.edu.br">
-            <img src="IFC.webp" alt="Imagem do Campus do IFC.">
-        </a>
-    </section>
-    <section id="Habilidades">
-        <h2>Habilidades Profissionais</h2>
-        <ul>
-            <li>Conhecimento Básico em python.</li>
-            <li>Conhecimento Básico em Java.</li>
-            <li>Iniciação em Ciência da Computação.</li>
-        </ul>
-        <br>
-        <img src="habilidades.jpg" alt="Programação.">
-    </section>
-    <section id="Contato">
-        <h2>Contato</h2>
-        <p>Se você deseja saber mais sobre meu trabalho ou tem alguma dúvida, entre em contato:</p>
-        <ul>
-            <li><strong>E-mail</strong>: <a href="mailto:ygorantunes99@gmail.com">ygorantunes99@gmail.com</a></li>
-            <li><strong>Instagram</strong>: <a href="https://instagram.com/meuperfil">@meuperfil</a></li>
-            <li><strong>LinkedIn</strong>: <a href="https://linkedin.com/in/meuperfil">Ainda sem um.</a></li>
-        </ul>
-    </section>
+                </fieldset>
+                <br>
+                <fieldset>
+                <label>Foi interessante a página?:</label>
+                
+                <label for="Sim-Foi">Sim foi</label>
+                <input type="radio" id="Sim-foi" name="Sim" value="foi">
+                
+                <label for="Não-foi">Não foi</label>
+                <input type="radio" id="Não-Foi" name="Não" value="foi">
+    
+                <label for="mensagem">Por que escolheu ler essa página?</label>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite sua resposta aqui..."></textarea>
+                </fieldset>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+</html>
